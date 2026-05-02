@@ -2262,6 +2262,17 @@ body {
 
 
 
+@media (max-width: 768px) {
+  .hero-lines {
+    display: none;
+  }
+}
+
+
+
+
+
+
 
 
 
