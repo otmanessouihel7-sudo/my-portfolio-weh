@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigitalFler – Premium Web Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="r.css">
+    
+
+
+
+
+
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav id="navbar">
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <span></span>
+        <span></span>
+      </div>
+      <span class="logo-text">DigitalFler</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#demand">Demand</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="#" class="btn-primary">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══ MOBILE MENU ══ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#" onclick="closeMenu()">Home</a></li>
+      <li><a href="#" onclick="closeMenu()">Projects</a></li>
+      <li><a href="#" onclick="closeMenu()">Demand</a></li>
+      <li><a href="#" onclick="closeMenu()">Contact</a></li>
+    </ul>
+    <div class="mobile-cta">
+      <a href="#" class="btn-primary" onclick="closeMenu()">Get Started →</a>
+    </div>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+
+    <!-- Decorative lines (SVG spider-web effect like the design) -->
+    <div class="hero-lines">
+      <svg viewBox="0 0 800 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="lg" cx="70%" cy="20%" r="60%">
+            <stop offset="0%" stop-color="#ff6a00" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#ff6a00" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <!-- Glowing orb -->
+        <circle cx="680" cy="120" r="220" fill="url(#lg)" />
+        <!-- Web lines -->
+        <g stroke="#ff6a00" stroke-width="0.6" opacity="0.5">
+          <line x1="680" y1="120" x2="900" y2="0"/>
+          <line x1="680" y1="120" x2="900" y2="200"/>
+          <line x1="680" y1="120" x2="900" y2="400"/>
+          <line x1="680" y1="120" x2="750" y2="400"/>
+          <line x1="680" y1="120" x2="550" y2="350"/>
+          <line x1="680" y1="120" x2="600" y2="0"/>
+          <line x1="680" y1="120" x2="400" y2="60"/>
+          <line x1="680" y1="120" x2="300" y2="200"/>
+          <line x1="680" y1="120" x2="400" y2="300"/>
+          <!-- Connecting arcs approximated as lines -->
+          <line x1="900" y1="0"   x2="900" y2="200"/>
+          <line x1="900" y1="200" x2="900" y2="400"/>
+          <line x1="900" y1="0"   x2="750" y2="400"/>
+          <line x1="600" y1="0"   x2="300" y2="200"/>
+          <line x1="400" y1="60"  x2="300" y2="200"/>
+          <line x1="300" y1="200" x2="400" y2="300"/>
+          <line x1="400" y1="300" x2="550" y2="350"/>
+          <line x1="550" y1="350" x2="750" y2="400"/>
+        </g>
+        <!-- Decorative dots -->
+        <g fill="#ff6a00" opacity="0.7">
+          <circle cx="30" cy="580" r="4"/>
+          <circle cx="680" cy="120" r="5"/>
+          <circle cx="900" cy="200" r="3"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+
+      <!-- Badge -->
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Premium Web Solutions
+      </div>
+
+      <!-- Heading -->
+      <h1>Get more clients<br>with <em>high<br>converting</em><br>websites<br>&amp; stores</h1>
+
+      <!-- Description -->
+      <p class="hero-desc">
+        We design modern, high-performance websites that turn visitors into customers. Clean design, fast loading, and premium user experience.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects &nbsp;→</a>
+        <a href="#demand" class="btn-secondary">Get One &nbsp;→</a>
+      </div>
+
+      <!-- Social proof -->
+      <div class="social-proof">
+        <div class="avatars">
+          <div class="avatar-placeholder" style="background:linear-gradient(135deg,#3a3a3a,#5a4a4a);">AB</div>
+          <div class="avatar-placeholder" style="background:linear-gradient(135deg,#4a3a3a,#6a5050);">CL</div>
+          <div class="avatar-placeholder" style="background:linear-gradient(135deg,#2a3a4a,#405060);">DM</div>
+          <div class="avatar-placeholder" style="background:linear-gradient(135deg,#3a4a3a,#506050);">EF</div>
+        </div>
+        <div class="rating-block">
+          <div class="stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="rating-text"><strong>4.9/5</strong> from 120+ clients</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <div class="scroll-mouse"></div>
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ STATS BAR ══ -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+
+      <div class="stat-item">
+        <div class="stat-icon">
+          <!-- Rocket -->
+          <svg viewBox="0 0 24 24"><path d="M9.5 21c0-1.4.5-2.7 1.5-3.7L14 14l-4-4-3.3 3C5.7 14 4.4 14.5 3 14.5"/><path d="M14 14l3-3c2-2 3-5 1-7-2-2-5-1-7 1L8 8"/><circle cx="15" cy="9" r="1"/><path d="M5 19l4-4M3 21l2-2"/></svg>
+        </div>
+        <div class="stat-text">
+          <div class="stat-num">120+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+      </div>
+
+      <div class="stat-divider"></div>
+
+      <div class="stat-item">
+        <div class="stat-icon">
+          <!-- Person -->
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </div>
+        <div class="stat-text">
+          <div class="stat-num">100+</div>
+          <div class="stat-label">Clients</div>
+        </div>
+      </div>
+
+      <div class="stat-divider"></div>
+
+      <div class="stat-item">
+        <div class="stat-icon">
+          <!-- Shield check -->
+          <svg viewBox="0 0 24 24"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7L12 2z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <div class="stat-text">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">Years</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // ── Navbar scroll blur ──
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // ── Hamburger / Mobile menu ──
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+      if (!navbar.contains(e.target) && !mobileMenu.contains(e.target)) {
+        closeMenu();
+      }
+    });
+
+    // ── Intersection Observer for fade-in ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.stats-inner').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+      observer.observe(el);
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ══════════════════════════════════════════
+     PROJECTS UNIVERSE SECTION
+══════════════════════════════════════════ -->
+<section class="projects-universe" id="projects">
+
+  <!-- ── Transition Zone ── -->
+  <div class="transition-zone">
+
+    <div class="section-label">
+      <span class="section-label-dot"></span>
+      Portfolio &amp; Work
+    </div>
+
+    <h2 class="power-title">
+      See how I turn ideas into<br>
+      <span class="gradient-text">Powerful &amp; Professional</span><br>
+      websites &amp; stores
+    </h2>
+
+    <!-- Features bar -->
+    <div class="features-bar">
+
+      <div class="feature-item">
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+        </span>
+        <div class="f-text">
+          <strong>Ultra Fast</strong>
+          <span>Optimized Speed</span>
+        </div>
+      </div>
+
+      <div class="feature-separator"></div>
+
+      <div class="feature-item">
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 3h12l4 6-10 12L2 9z"/>
+            <path d="M11 3l-3.5 6 6.5 6"/>
+            <path d="M13 3l3.5 6-6.5 6"/>
+          </svg>
+        </span>
+        <div class="f-text">
+          <strong>Pixel Perfect</strong>
+          <span>Mastered Detail</span>
+        </div>
+      </div>
+
+      <div class="feature-separator"></div>
+
+      <div class="feature-item">
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.71-2.13 0-2.97a2.121 2.121 0 0 0-3 0Z"/>
+            <path d="M15 9s-4 1-6 1c-1.1 0-2-.9-2-2a2 2 0 0 1 2-2c0-2-1-6-1-6s3.5-.5 6 2c.9.11 1.7.53 2.3 1.2l4.7 4.7c1.2 1.2 1.2 3.1 0 4.3L15 9Z"/>
+          </svg>
+        </span>
+        <div class="f-text">
+          <strong>High Converting</strong>
+          <span>Sales Driven</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Filter System ── -->
+  <div class="smart-filter-system">
+
+    <div class="filter-main-tabs">
+      <button class="tab-trigger active" data-main="all">All Creations</button>
+      <button class="tab-trigger" data-main="websites">Websites</button>
+      <button class="tab-trigger" data-main="stores">E-commerce Stores</button>
+    </div>
+
+    <div class="sub-filter-grid">
+      <div class="sub-group" data-parent="websites" id="sub-websites">
+        <span class="chip" data-cat="business">Business</span>
+        <span class="chip" data-cat="agency">Digital Agency</span>
+        <span class="chip" data-cat="portfolio">Portfolio</span>
+        <span class="chip" data-cat="saas">SaaS</span>
+        <span class="chip" data-cat="blog">Blog</span>
+        <span class="chip" data-cat="landing-page">Landing Page</span>
+        <span class="chip" data-cat="education">Online Learning</span>
+        <span class="chip" data-cat="startup">Startup</span>
+      </div>
+      <div class="sub-group" data-parent="stores" id="sub-stores">
+        <span class="chip" data-cat="fashion">Fashion</span>
+        <span class="chip" data-cat="electronics">Electronics</span>
+        <span class="chip" data-cat="beauty">Beauty</span>
+        <span class="chip" data-cat="home">Home Decor</span>
+        <span class="chip" data-cat="sports">Sports</span>
+        <span class="chip" data-cat="food">Food &amp; Restaurant</span>
+        <span class="chip" data-cat="luxury">Luxury</span>
+        <span class="chip" data-cat="general">Multi Store</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── Projects Grid ── -->
+  <div class="projects-display-grid" id="projectGrid">
+    <!-- Skeleton placeholders -->
+    <div class="skeleton-card"><div class="skeleton-img"></div></div>
+    <div class="skeleton-card"><div class="skeleton-img"></div></div>
+    <div class="skeleton-card"><div class="skeleton-img"></div></div>
+  </div>
+
+  <!-- ── Action Zone ── -->
+  <div class="action-zone" id="actionZone">
+    <button class="mega-btn" id="toggleProjects" style="display:none">
+      <span>Discover More Work</span>
+    </button>
+    <button class="secondary-btn" id="showLessBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+      Show Less
+    </button>
+  </div>
+
+</section>
+
+<!-- ══ GSAP (CDN — no local network required) ══ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+/* ============================================================
+   DIGITALFLER 2026 — projects-section.js
+   Fully self-contained, modular, zero conflicts
+   ============================================================ */
+
+(function () {
+  'use strict';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* ── State ─────────────────────────────── */
+  let allProjects   = [];
+  let filtered      = [];
+  let visibleCount  = 6;
+  const PAGE_SIZE   = 6;
+
+  /* ── DOM refs ───────────────────────────── */
+  const grid         = document.getElementById('projectGrid');
+  const toggleBtn    = document.getElementById('toggleProjects');
+  const showLessBtn  = document.getElementById('showLessBtn');
+  const tabTriggers  = document.querySelectorAll('.tab-trigger');
+  const chips        = document.querySelectorAll('.chip');
+
+  /* ── Category helpers ───────────────────── */
+  const WEBSITE_CATS = ['business','agency','portfolio','saas','blog','landing-page','education','startup'];
+  const STORE_CATS   = ['fashion','electronics','beauty','home','sports','food','luxury','general'];
+
+  const CAT_LABELS = {
+    business: 'Business', agency: 'Digital Agency', portfolio: 'Portfolio',
+    saas: 'SaaS', blog: 'Blog', 'landing-page': 'Landing Page',
+    education: 'Online Learning', startup: 'Startup',
+    fashion: 'Fashion', electronics: 'Electronics', beauty: 'Beauty',
+    home: 'Home Decor', sports: 'Sports', food: 'Food', luxury: 'Luxury', general: 'Multi Store'
+  };
+
+  /* ─────────────────────────────────────────
+     LOAD PROJECTS — WordPress REST API
+     Falls back to placeholder state gracefully
+  ───────────────────────────────────────── */
+  async function loadProjects() {
+        try {
+            const res = await fetch('http://porfolio-backend.local/wp-json/wp/v2/projects?_embed&per_page=100');
+            if (!res.ok) throw new Error('API error');
+            allProjects = await res.json();
+            applyFilter(true);
+        } catch (err) {
+            console.warn('API not available — showing placeholder state.');
+            if (projectGrid) {
+                projectGrid.innerHTML = `
+                    <div style="grid-column:1/-1; text-align:center; padding:60px 20px; color:#444;">
+                        <p style="font-size:14px;">Connect to WordPress API to display projects.</p>
+                    </div>
+                `;
+            }
+            if (toggleBtn) toggleBtn.style.display = 'none';
+        }
+    }
+
+  /* ─────────────────────────────────────────
+     FILTER LOGIC
+  ───────────────────────────────────────── */
+  function getActiveMain() {
+    return document.querySelector('.tab-trigger.active')?.dataset.main || 'all';
+  }
+  function getSelectedCats() {
+    return [...document.querySelectorAll('.chip.selected')].map(c => c.dataset.cat);
+  }
+
+  function applyFilter(reset = false) {
+    if (reset) visibleCount = PAGE_SIZE;
+
+    const main     = getActiveMain();
+    const selected = getSelectedCats();
+
+    filtered = allProjects.filter(p => {
+      const cats = p._embedded?.['wp:term']?.[0]?.map(t => t.slug) || [];
+
+      const matchMain =
+        main === 'all' ||
+        (main === 'websites' && cats.some(c => WEBSITE_CATS.includes(c))) ||
+        (main === 'stores'   && cats.some(c => STORE_CATS.includes(c)));
+
+      const matchChips = selected.length === 0 || selected.some(s => cats.includes(s));
+
+      return matchMain && matchChips;
+    });
+
+    renderGrid();
+  }
+
+  /* ─────────────────────────────────────────
+     RENDER GRID
+  ───────────────────────────────────────── */
+  function renderGrid() {
+    if (!grid) return;
+    grid.innerHTML = '';
+
+    const slice = filtered.slice(0, visibleCount);
+
+    if (slice.length === 0) {
+      grid.innerHTML = `
+        <div class="empty-state">
+          <span>🔍</span>
+          <p>No projects match this filter.<br>Try a different category.</p>
+        </div>`;
+      updateButtons();
+      return;
+    }
+
+    const frag = document.createDocumentFragment();
+
+    slice.forEach((p) => {
+      const title = p.title?.rendered || 'Untitled Project';
+      const link  = p.acf?.link || '#';
+      const img   = p._embedded?.['wp:featuredmedia']?.[0]?.source_url || '';
+      const cats  = p._embedded?.['wp:term']?.[0]?.map(t => t.slug) || [];
+      const tag   = cats.find(c => CAT_LABELS[c]) || '';
+
+      const card = document.createElement('div');
+      card.className = 'modern-card';
+      card.setAttribute('role', 'article');
+
+      card.innerHTML = `
+        <div class="card-visual">
+          ${img
+            ? `<img src="${img}" alt="${title}" loading="lazy" decoding="async">`
+            : `<div style="width:100%;height:100%;background:linear-gradient(135deg,#1a1a1a,#252525);"></div>`
+          }
+        </div>
+        <div class="hover-info" aria-hidden="true">
+          <div class="info-text">
+            ${tag ? `<div class="card-meta"><span class="card-tag">${CAT_LABELS[tag] || tag}</span></div>` : ''}
+            <h3>${title}</h3>
+            <a href="${link}" target="_blank" rel="noopener noreferrer" class="live-link">
+              View Live
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17 17 7M7 7h10v10"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      `;
+
+      frag.appendChild(card);
+    });
+
+    grid.appendChild(frag);
+    updateButtons();
+    animateCards();
+  }
+
+  /* ─────────────────────────────────────────
+     SCROLL-TRIGGERED CARD ANIMATIONS (GSAP)
+     Falls back to IntersectionObserver if GSAP not loaded
+  ───────────────────────────────────────── */
+  function animateCards() {
+    const cards = grid.querySelectorAll('.modern-card');
+
+    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+      // GSAP stagger scroll reveal
+      gsap.fromTo(cards,
+        { opacity: 0, y: 50, scale: 0.97 },
+        {
+          opacity: 1, y: 0, scale: 1,
+          duration: 0.65,
+          ease: 'power3.out',
+          stagger: { amount: 0.4, from: 'start' },
+          scrollTrigger: {
+            trigger: grid,
+            start: 'top 85%',
+            once: true
+          }
+        }
+      );
+    } else {
+      // Pure CSS fallback — IntersectionObserver
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      cards.forEach((card, i) => {
+        card.style.transitionDelay = `${i * 70}ms`;
+        io.observe(card);
+      });
+    }
+  }
+
+  /* ─────────────────────────────────────────
+     TOGGLE BUTTONS
+  ───────────────────────────────────────── */
+  function updateButtons() {
+    const hasMore = filtered.length > visibleCount;
+    const hasLess = visibleCount > PAGE_SIZE;
+
+    // Discover More
+    if (hasMore) {
+      toggleBtn.style.display = 'inline-block';
+      toggleBtn.querySelector('span').textContent = 'Discover More Work';
+    } else {
+      toggleBtn.style.display = 'none';
+    }
+
+    // Show Less
+    showLessBtn.classList.toggle('show', hasLess);
+  }
+
+  toggleBtn?.addEventListener('click', () => {
+    visibleCount += PAGE_SIZE;
+    renderGrid();
+    // Smooth scroll to new cards
+    setTimeout(() => {
+      const cards = grid.querySelectorAll('.modern-card');
+      if (cards[visibleCount - PAGE_SIZE]) {
+        cards[visibleCount - PAGE_SIZE].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, 100);
+  });
+
+  showLessBtn?.addEventListener('click', () => {
+    visibleCount = PAGE_SIZE;
+    renderGrid();
+    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  /* ─────────────────────────────────────────
+     FILTER TABS
+  ───────────────────────────────────────── */
+  tabTriggers.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabTriggers.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      // Toggle sub-group visibility
+      document.querySelectorAll('.sub-group').forEach(g => g.classList.remove('active'));
+      const target = document.getElementById(`sub-${tab.dataset.main}`);
+      if (target) target.classList.add('active');
+
+      // Clear chip selections when switching main tab
+      chips.forEach(c => c.classList.remove('selected'));
+
+      applyFilter(true);
+    });
+  });
+
+  /* ─────────────────────────────────────────
+     CHIPS
+  ───────────────────────────────────────── */
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chip.classList.toggle('selected');
+      applyFilter(true);
+    });
+  });
+
+  /* ─────────────────────────────────────────
+     PLACEHOLDER STATE (no API)
+  ───────────────────────────────────────── */
+  function renderPlaceholder() {
+    if (!grid) return;
+    grid.innerHTML = `
+      <div class="empty-state" style="grid-column:1/-1;">
+        <span>🚀</span>
+        <p style="color:#555;">Connect to the WordPress API to display your projects.<br>
+           Projects will appear here automatically once the API is live.</p>
+      </div>`;
+    if (toggleBtn) toggleBtn.style.display = 'none';
+  }
+
+  /* ─────────────────────────────────────────
+     GSAP — Section Title Entrance
+  ───────────────────────────────────────── */
+  function animateSection() {
+    if (typeof gsap === 'undefined') return;
+
+    // Stagger hero elements in the transition-zone
+    gsap.fromTo('.transition-zone > *',
+      { opacity: 0, y: 30 },
+      {
+        opacity: 1, y: 0,
+        duration: 0.7,
+        ease: 'power3.out',
+        stagger: 0.12,
+        scrollTrigger: {
+          trigger: '.transition-zone',
+          start: 'top 80%',
+          once: true
+        }
+      }
+    );
+
+    // Filter system fade-in
+    gsap.fromTo('.smart-filter-system',
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1, y: 0,
+        duration: 0.6,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: '.smart-filter-system',
+          start: 'top 85%',
+          once: true
+        }
+      }
+    );
+  }
+
+  /* ─────────────────────────────────────────
+     BOOT
+  ───────────────────────────────────────── */
+  animateSection();
+  loadProjects();
+
+
+  // إضافة حركة تفاعلية عند حركة الماوس (للحاسوب)
+if (window.innerWidth > 1024) {
+    document.querySelectorAll('.modern-card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const xc = rect.width / 2;
+            const yc = rect.height / 2;
+            
+            const dx = x - xc;
+            const dy = y - yc;
+            
+            gsap.to(card, {
+                rotationY: dx / 20,
+                rotationX: -dy / 20,
+                ease: "power2.out",
+                duration: 0.5
+            });
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            gsap.to(card, {
+                rotationY: 0,
+                rotationX: 0,
+                ease: "elastic.out(1, 0.3)",
+                duration: 1.2
+            });
+        });
+    });
+}
+
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="demand-section" id="demand">
+  <div class="demand-container">
+
+    <!-- WIZARD HEADER -->
+    <div class="wizard-header">
+      <div class="step-counter">STEP <span id="currentStepNum">1</span>/3</div>
+      <div class="progress-stepper">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <p id="stepStatusMsg" class="step-status-msg">Select your project foundation</p>
+    </div>
+
+    <form id="multiStepForm" novalidate>
+
+      <!-- PHASE 1 -->
+      <div class="form-phase active" id="phase1">
+        <div class="phase-header">
+          <h2>What are we building?</h2>
+          <p>Select the core DNA of your digital project.</p>
+        </div>
+        <div class="type-grid">
+          <div class="type-card" data-type="websites">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Websites</h3>
+              <p>Corporate, SaaS &amp; Blogs</p>
+            </div>
+          </div>
+          <div class="type-card" data-type="stores">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6zM3 6h18M16 10a4 4 0 01-8 0"/>
+              </svg>
+            </div>
+            <div>
+              <h3>E-commerce</h3>
+              <p>Retail &amp; Digital Sales</p>
+            </div>
+          </div>
+          <div class="type-card" data-type="apps">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <path d="M12 18h.01"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Mobile Apps</h3>
+              <p>iOS &amp; Android Solutions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHASE 2 -->
+      <div class="form-phase" id="phase2">
+        <div class="phase-header">
+          <h2>Specific Category</h2>
+          <p>Matching your project with the right market niche.</p>
+        </div>
+        <div id="dynamicCategories" class="market-grid"></div>
+        <div class="navigation-btns">
+          <button type="button" class="back-link" data-goto="1">← Previous Step</button>
+        </div>
+      </div>
+
+      <!-- PHASE 3 -->
+      <div class="form-phase" id="phase3">
+        <div class="phase-header">
+          <h2>Project Specifications</h2>
+        </div>
+        <div class="details-grid">
+          <div class="input-group">
+            <label>Main Goal (Intent)</label>
+            <div class="pills-container" data-field="intent">
+              <span class="pill active" data-value="Sell Products" data-desc="Drive more sales">Sell Products</span>
+              <span class="pill" data-value="Generate Leads" data-desc="Get new client inquiries">Generate Leads</span>
+              <span class="pill" data-value="Showcase Work" data-desc="Improve brand awareness">Showcase Work</span>
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Service Level</label>
+            <div class="pills-container" data-field="scope">
+              <span class="pill" data-value="Starter" data-desc="Essential features">Starter</span>
+              <span class="pill active" data-value="Professional" data-desc="Highly recommended">Professional</span>
+              <span class="pill" data-value="Advanced" data-desc="Custom enterprise build">Advanced</span>
+            </div>
+            <p id="scopeDesc" class="pill-desc">Highly recommended</p>
+          </div>
+        </div>
+
+        <div class="summary-box">
+          <p id="selectionSummary">—</p>
+        </div>
+
+        <div class="contact-inputs">
+          <input type="text" id="clientName" placeholder="Full Name" autocomplete="name" required>
+          <input type="tel" id="clientPhone" placeholder="WhatsApp (e.g. +212…)" autocomplete="tel" required>
+        </div>
+
+        <div class="action-footer">
+          <button type="button" class="back-link" data-goto="2">← Back</button>
+          <button type="submit" class="launch-btn">Send Proposal 🚀</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<script>
+  /* ── DATA ── */
+  const marketOptions = {
+    websites: [
+      { title: 'Local Business', desc: 'Companies & clinics' },
+      { title: 'Landing Page',   desc: 'Conversion-focused / Ads' },
+      { title: 'Personal Brand', desc: 'Influencers & pros' },
+      { title: 'Booking Platform', desc: 'Appointments & services' },
+      { title: 'SaaS / Web App', desc: 'Custom software' },
+      { title: 'Content / Blog', desc: 'SEO & news platforms' }
+    ],
+    stores: [
+      { title: 'Niche Store',       desc: 'Standard retail' },
+      { title: 'Dropshipping',      desc: 'Inventory-free automation' },
+      { title: 'Print-On-Demand',   desc: 'Custom merch systems' },
+      { title: 'Digital Products',  desc: 'Courses, e-books & software' },
+      { title: 'Local E-com',       desc: 'Delivery-focused Morocco' },
+      { title: 'Marketplace',       desc: 'Multi-vendor platforms' }
+    ],
+    apps: [
+      { title: 'E-commerce App',    desc: 'Mobile shopping' },
+      { title: 'Booking App',       desc: 'Reservations & schedules' },
+      { title: 'Business Tool',     desc: 'Internal management' },
+      { title: 'Social / Community',desc: 'Engage with users' },
+      { title: 'Service App',       desc: 'Delivery or on-demand' }
+    ]
+  };
+
+  let sel = { type: '', cat: '', intent: 'Sell Products', scope: 'Professional' };
+  let currentStep = 1;
+
+  const statusMessages = {
+    1: 'Select your project foundation',
+    2: 'Choose your market niche',
+    3: 'Almost there — final details'
+  };
+
+  /* ── STEP NAVIGATION ── */
+  function goStep(n) {
+    const current = document.getElementById(`phase${currentStep}`);
+    const target  = document.getElementById(`phase${n}`);
+    if (!target || !current) return;
+
+    // exit animation on current
+    current.classList.add('exit');
+    setTimeout(() => {
+      current.classList.remove('active', 'exit');
+      current.style.display = 'none';
+
+      target.style.display = 'block';
+      // force reflow
+      void target.offsetWidth;
+      target.classList.add('active');
+
+      currentStep = n;
+      updateHeader();
+      if (n === 3) updateSummary();
+    }, 280);
+  }
+
+  function updateHeader() {
+    const fill    = document.getElementById('progressFill');
+    const stepNum = document.getElementById('currentStepNum');
+    const msg     = document.getElementById('stepStatusMsg');
+    if (fill)    fill.style.width = (currentStep * 33.33) + '%';
+    if (stepNum) stepNum.textContent = currentStep;
+    if (msg)     msg.textContent = statusMessages[currentStep] || '';
+  }
+
+  /* ── PHASE 1 ── */
+  document.querySelectorAll('.type-card').forEach(card => {
+    card.addEventListener('click', function () {
+      // visual feedback
+      document.querySelectorAll('.type-card').forEach(c => c.classList.remove('selected'));
+      this.classList.add('selected');
+
+      sel.type = this.dataset.type;
+      buildCategories(sel.type);
+
+      setTimeout(() => goStep(2), 180);
+    });
+  });
+
+  /* ── PHASE 2 ── */
+  function buildCategories(type) {
+    const grid = document.getElementById('dynamicCategories');
+    if (!grid) return;
+    grid.innerHTML = '';
+    const items = marketOptions[type] || [];
+
+    items.forEach((item, i) => {
+      const div = document.createElement('div');
+      div.className = 'cat-item';
+      div.style.animationDelay = (i * 0.06) + 's';
+      div.innerHTML = `<h4>${escapeHtml(item.title)}</h4><p>${escapeHtml(item.desc)}</p>`;
+      div.addEventListener('click', () => {
+        sel.cat = item.title;
+        document.querySelectorAll('.cat-item').forEach(c => c.classList.remove('selected'));
+        div.classList.add('selected');
+        setTimeout(() => goStep(3), 360);
+      });
+      grid.appendChild(div);
+    });
+  }
+
+  /* ── PHASE 3 PILLS ── */
+  document.querySelectorAll('.pills-container').forEach(container => {
+    container.querySelectorAll('.pill').forEach(pill => {
+      pill.addEventListener('click', function () {
+        container.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+        this.classList.add('active');
+
+        const field = container.dataset.field;
+        sel[field] = this.dataset.value || this.textContent.trim();
+
+        if (field === 'scope') {
+          const desc = document.getElementById('scopeDesc');
+          if (desc) desc.textContent = this.dataset.desc || '';
+        }
+        updateSummary();
+      });
+    });
+  });
+
+  function updateSummary() {
+    const el = document.getElementById('selectionSummary');
+    if (!el) return;
+    const typeLabel = { websites: 'Website', stores: 'E-commerce Store', apps: 'Mobile App' }[sel.type] || sel.type;
+    el.textContent = `${typeLabel} → ${sel.cat || '—'} · Goal: ${sel.intent} · Level: ${sel.scope}`;
+  }
+
+  /* ── BACK BUTTONS ── */
+  document.querySelectorAll('.back-link[data-goto]').forEach(btn => {
+    btn.addEventListener('click', () => goStep(+btn.dataset.goto));
+  });
+
+  /* ── SUBMIT ── */
+  document.getElementById('multiStepForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const nameEl  = document.getElementById('clientName');
+    const phoneEl = document.getElementById('clientPhone');
+    const name    = nameEl.value.trim();
+    const phone   = phoneEl.value.trim();
+
+    // reset errors
+    nameEl.classList.remove('error');
+    phoneEl.classList.remove('error');
+
+    let valid = true;
+
+    if (name.length < 3) {
+      nameEl.classList.add('error');
+      nameEl.focus();
+      valid = false;
+    }
+
+    const cleanPhone = phone.replace(/\s/g, '');
+    if (!/^\+?\d{8,15}$/.test(cleanPhone)) {
+      phoneEl.classList.add('error');
+      if (valid) phoneEl.focus();
+      valid = false;
+    }
+
+    if (!valid) return;
+
+    // show success
+    const container = document.querySelector('.demand-container');
+    const overlay = document.createElement('div');
+    overlay.className = 'success-overlay';
+    overlay.innerHTML = `
+      <div class="success-icon">🚀</div>
+      <h2 class="success-title">Proposal Sent!</h2>
+      <p class="success-sub">We'll reach out on WhatsApp shortly.</p>
+    `;
+    container.appendChild(overlay);
+
+    const msg = encodeURIComponent(
+      `🚀 New Project Inquiry\n` +
+      `Name: ${name}\n` +
+      `Type: ${sel.type}\n` +
+      `Category: ${sel.cat}\n` +
+      `Goal: ${sel.intent}\n` +
+      `Level: ${sel.scope}\n` +
+      `WhatsApp: ${cleanPhone}`
+    );
+    window.open(`https://wa.me/212776192673?text=${msg}`, '_blank');
+  });
+
+  /* ── HELPERS ── */
+  function escapeHtml(str) {
+    return String(str).replace(/[<>&"']/g, c =>
+      ({ '<':'&lt;', '>':'&gt;', '&':'&amp;', '"':'&quot;', "'":'&#39;' }[c])
+    );
+  }
+</script>
+
+
+
+<section class="contact-ultra" id="contact">
+  <div class="contact-wrapper">
+    <div class="contact-grid">
+
+      <!-- ════ LEFT ════ -->
+      <div class="contact-content">
+
+        <div class="badge-premium reveal">
+          <span class="badge-dot"></span>
+          FREE CONSULTATION
+        </div>
+
+        <h2 class="cta-title reveal d1">
+          Not sure what to build?<br>
+          Let's figure it out <em>together.</em>
+        </h2>
+
+        <p class="cta-desc reveal d2">
+          Share your idea or problem and I'll give you a clear direction. No pressure, no commitment.
+        </p>
+
+        <div class="cta-buttons reveal d2">
+          <!-- WhatsApp -->
+          <a href="https://wa.me/212776192673" class="cta-btn" target="_blank" rel="noopener">
+            <div class="cta-btn-icon green">
+              <svg viewBox="0 0 24 24" fill="#22c55e"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div class="cta-btn-text">
+              <strong>Chat on WhatsApp</strong>
+              <span>Fastest way to reach me</span>
+            </div>
+            <span class="cta-btn-arrow">→</span>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:hello@example.com" class="cta-btn">
+            <div class="cta-btn-icon orange">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#ff6a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/>
+              </svg>
+            </div>
+            <div class="cta-btn-text">
+              <strong>Send an Email</strong>
+              <span>I'll reply within 12h</span>
+            </div>
+            <span class="cta-btn-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- Trust row -->
+        <div class="trust-row reveal d3">
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div class="trust-text">
+              <span>Reply within</span>
+              <strong>12 hours</strong>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="trust-text">
+              <span>Your idea is</span>
+              <strong>100% safe</strong>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>
+              </svg>
+            </div>
+            <div class="trust-text">
+              <span>No commitment</span>
+              <strong>Just a conversation</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quote -->
+        <div class="quote-card reveal d4">
+          <span class="quote-mark">"</span>
+          <p class="quote-text">Sometimes a quick conversation is all you need to move your business forward.</p>
+        </div>
+
+      </div>
+
+      <!-- ════ RIGHT FORM ════ -->
+      <div class="contact-form-container reveal d2">
+
+        <div class="form-header">
+          <div class="form-header-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4a2 2 0 00-2 2v12a2 2 0 002 2h14l4 4V4a2 2 0 00-2-2zm-2 10H6v-2h12v2zm0-3H6V7h12v2z"/></svg>
+          </div>
+          <div class="form-header-text">
+            <h3>Quick Consultation</h3>
+            <p>Fill out the form and I'll get back to you.</p>
+          </div>
+        </div>
+
+        <form id="smartContactForm" novalidate>
+          <!-- Name -->
+          <div class="input-field">
+            <input type="text" id="cName" placeholder="Your Name" autocomplete="name" required>
+            <span class="input-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
+              </svg>
+            </span>
+          </div>
+
+          <!-- Contact -->
+          <div class="input-field">
+            <input type="text" id="cContact" placeholder="Email or WhatsApp" autocomplete="email" required>
+            <span class="input-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 3.18 2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+            </span>
+          </div>
+
+          <!-- Message -->
+          <div class="input-field textarea-field">
+            <textarea id="cMsg" rows="3" placeholder="Describe your problem or idea..."></textarea>
+            <span class="input-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+              </svg>
+            </span>
+            <p class="input-hint">The more details, the better I can help.</p>
+          </div>
+
+          <!-- File -->
+          <div class="file-upload-box" id="fileBox">
+            <span class="file-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66L9.41 17.41a2 2 0 01-2.83-2.83l8.49-8.48"/>
+              </svg>
+            </span>
+            <div class="file-info">
+              <strong>Attach idea (optional)</strong>
+              <span>PDF, DOC, PNG, JPG (Max. 10MB)</span>
+            </div>
+            <button type="button" class="file-choose-btn" id="fileBtn">Choose File</button>
+            <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg" style="display:none">
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="form-submit-btn">
+            <div class="submit-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </div>
+            Get My Answer
+          </button>
+
+          <p class="form-disclaimer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>
+            </svg>
+            This is just a conversation, not a commitment.
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+/* Scroll reveal */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* File picker */
+const fileBtn   = document.getElementById('fileBtn');
+const fileInput = document.getElementById('fileInput');
+const fileBox   = document.getElementById('fileBox');
+fileBtn?.addEventListener('click', e => { e.stopPropagation(); fileInput.click(); });
+fileBox?.addEventListener('click', () => fileInput.click());
+fileInput?.addEventListener('change', function() {
+  if(this.files[0]) {
+    fileBox.querySelector('.file-info strong').textContent = this.files[0].name;
+    fileBtn.textContent = 'Change';
+  }
+});
+
+/* Form submit */
+function inputError(id) {
+  const el = document.getElementById(id);
+  if(!el) return;
+  el.style.borderColor = '#ef4444';
+  el.style.boxShadow  = '0 0 0 3px rgba(239,68,68,0.1)';
+  el.focus();
+  setTimeout(() => { el.style.borderColor=''; el.style.boxShadow=''; }, 2200);
+}
+
+document.getElementById('smartContactForm')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name    = document.getElementById('cName').value.trim();
+  const contact = document.getElementById('cContact').value.trim();
+  const msg     = document.getElementById('cMsg').value.trim();
+  let ok = true;
+  if(name.length < 2)    { inputError('cName');    ok=false; }
+  if(contact.length < 5) { inputError('cContact'); ok=false; }
+  if(!ok) return;
+  const encoded = encodeURIComponent(`🚀 New Contact Inquiry\nName: ${name}\nContact: ${contact}\nMessage: ${msg||'—'}`);
+  window.open(`https://wa.me/212776192673?text=${encoded}`, '_blank');
+  this.reset();
+  fileBox.querySelector('.file-info strong').textContent = 'Attach idea (optional)';
+  fileBtn.textContent = 'Choose File';
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<style>
+/* ════════════════════════════════════════
+   SCOPED RESET — لا يؤثر على باقي الصفحة
+════════════════════════════════════════ */
+.df-footer-scope *,
+.df-footer-scope *::before,
+.df-footer-scope *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ════════════════════════════════════════
+   VARIABLES
+════════════════════════════════════════ */
+.df-footer-scope {
+  --df-bg:        #0a0a0a;
+  --df-surface:   #111111;
+  --df-border:    rgba(255,255,255,0.07);
+  --df-orange:    #ff5e1a;
+  --df-oglow:     rgba(255,94,26,0.18);
+  --df-text:      #e8e8e8;
+  --df-muted:     #666666;
+  --df-green:     #22c55e;
+  --df-white:     #ffffff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--df-text);
+  display: block;
+}
+
+/* ════════════════════════════════════════
+   LIVE AVAILABILITY BAR
+════════════════════════════════════════ */
+.df-avail-bar {
+  background: var(--df-surface);
+  border-top:    1px solid var(--df-border);
+  border-bottom: 1px solid var(--df-border);
+  padding: 0 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.df-avail-bar::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,94,26,.04), transparent);
+  animation: df-shimmer 4s infinite;
+  pointer-events: none;
+}
+@keyframes df-shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* segments */
+.df-av-seg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 28px;
+  height: 100%;
+  border-right: 1px solid var(--df-border);
+  flex-shrink: 0;
+}
+.df-av-seg:first-child { padding-right: 28px; padding-left: 0; }
+.df-av-seg.df-av-last  { border-right: none; margin-right: auto; padding-right: 0; }
+
+/* RTL fix for the rightmost segment */
+[dir="rtl"] .df-av-seg:first-child { padding-right: 0; padding-left: 28px; border-right: none; border-left: 1px solid var(--df-border); }
+[dir="rtl"] .df-av-seg             { border-right: none; border-left: 1px solid var(--df-border); }
+[dir="rtl"] .df-av-seg.df-av-last  { border-left: none; margin-right: 0; margin-left: auto; padding-left: 0; }
+
+/* live dot */
+.df-live-dot {
+  width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+  background: var(--df-green);
+  box-shadow: 0 0 8px var(--df-green);
+  animation: df-pulse 2s infinite;
+}
+@keyframes df-pulse {
+  0%,100% { box-shadow: 0 0 4px var(--df-green); }
+  50%      { box-shadow: 0 0 14px var(--df-green), 0 0 28px rgba(34,197,94,.4); }
+}
+
+.df-live-label {
+  font-size: 11px; font-weight: 700;
+  color: var(--df-orange);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.df-av-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 22px; font-weight: 800;
+  color: var(--df-orange);
+  min-width: 38px;
+  text-align: center;
+}
+.df-av-num.df-flip { animation: df-numFlip .4s ease; }
+@keyframes df-numFlip {
+  0%   { transform: translateY(-8px); opacity: 0; }
+  100% { transform: translateY(0);    opacity: 1; }
+}
+
+.df-av-sub { font-size: 12px; color: var(--df-muted); }
+
+/* avatars */
+.df-av-row { display: flex; align-items: center; }
+.df-av-row span {
+  width: 30px; height: 30px; border-radius: 50%;
+  border: 2px solid var(--df-surface);
+  background: #1e1e1e;
+  display: flex; align-items: center; justify-content: center;
+  margin-left: -9px; overflow: hidden;
+}
+.df-av-row span:first-child { margin-left: 0; }
+.df-av-row span svg { width: 15px; height: 15px; stroke: #555; fill: none; }
+
+.df-booked-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 20px; font-weight: 800;
+  color: var(--df-orange);
+}
+
+/* ════════════════════════════════════════
+   FOOTER
+════════════════════════════════════════ */
+.df-footer {
+  background: var(--df-surface);
+  padding: 72px 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.df-footer::before {
+  content: '';
+  position: absolute;
+  top: -120px; left: 50%;
+  transform: translateX(-50%);
+  width: 700px; height: 300px;
+  background: radial-gradient(ellipse, rgba(255,94,26,.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.df-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.2fr 1fr;
+  gap: 48px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid var(--df-border);
+}
+
+/* ── Brand ── */
+.df-brand-logo {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 18px;
+  text-decoration: none;
+}
+.df-logo-icon {
+  width: 42px; height: 42px;
+  background: var(--df-orange);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 24px var(--df-oglow);
+  flex-shrink: 0;
+}
+.df-logo-icon svg { width: 22px; height: 22px; fill: #fff; }
+.df-logo-text {
+  font-family: 'Syne', sans-serif;
+  font-size: 22px; font-weight: 800;
+  color: var(--df-white);
+  letter-spacing: -.01em;
+}
+.df-logo-text span { color: var(--df-orange); }
+
+.df-brand-desc {
+  font-size: 14px; color: var(--df-muted);
+  line-height: 1.75; max-width: 240px;
+  margin-bottom: 28px;
+}
+
+.df-badges { display: flex; flex-direction: column; gap: 10px; }
+.df-badge-row {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 13px; color: #bbb;
+}
+.df-badge-ico {
+  width: 30px; height: 30px; border-radius: 8px; flex-shrink: 0;
+  background: rgba(255,94,26,.1);
+  border: 1px solid rgba(255,94,26,.2);
+  display: flex; align-items: center; justify-content: center;
+}
+.df-badge-ico svg { width: 15px; height: 15px; stroke: var(--df-orange); fill: none; }
+
+/* ── Col title ── */
+.df-col-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px; font-weight: 700;
+  color: var(--df-white);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: 20px;
+}
+
+/* ── Quick links ── */
+.df-links { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.df-links a {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 9px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #aaa; font-size: 14px;
+  border: 1px solid transparent;
+  transition: all .25s;
+  position: relative; overflow: hidden;
+}
+.df-links a::before {
+  content: '';
+  position: absolute; right: 0; top: 0; bottom: 0;
+  width: 2px; background: var(--df-orange);
+  transform: scaleY(0);
+  transition: transform .25s;
+  border-radius: 2px;
+}
+[dir="ltr"] .df-links a::before { left: 0; right: auto; }
+
+.df-links a:hover {
+  color: var(--df-white);
+  background: rgba(255,94,26,.06);
+  border-color: rgba(255,94,26,.15);
+}
+.df-links a:hover::before { transform: scaleY(1); }
+.df-links a svg {
+  width: 14px; height: 14px; stroke: currentColor; fill: none;
+  transition: transform .25s;
+}
+.df-links a:hover svg { transform: translateX(-3px); }
+[dir="ltr"] .df-links a:hover svg { transform: translateX(3px); }
+
+/* ── Plans ── */
+.df-plans { display: flex; flex-direction: column; gap: 8px; }
+.df-plan {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--df-border);
+  text-decoration: none;
+  transition: all .25s;
+}
+.df-plan:hover {
+  background: rgba(255,94,26,.07);
+  border-color: rgba(255,94,26,.25);
+  transform: translateY(-1px);
+}
+.df-plan-info strong { display: block; font-size: 14px; font-weight: 600; color: var(--df-white); }
+.df-plan-info span   { font-size: 12px; color: var(--df-muted); }
+.df-plan svg { width: 16px; height: 16px; stroke: var(--df-orange); fill: none; opacity: 0; transition: opacity .25s; }
+.df-plan:hover svg { opacity: 1; }
+
+/* ── Contact ── */
+.df-contact-list { display: flex; flex-direction: column; gap: 14px; }
+.df-contact-item { display: flex; align-items: flex-start; gap: 12px; }
+.df-c-ico {
+  width: 36px; height: 36px; border-radius: 9px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--df-border);
+}
+.df-c-ico svg { width: 17px; height: 17px; }
+.df-c-ico.wa  { background: rgba(37,211,102,.12); border-color: rgba(37,211,102,.2); }
+.df-c-ico.wa  svg { fill: #25d366; stroke: none; }
+.df-c-ico.em  { background: rgba(255,94,26,.1);   border-color: rgba(255,94,26,.2); }
+.df-c-ico.em  svg { stroke: var(--df-orange); fill: none; }
+.df-c-ico.loc { background: rgba(99,102,241,.1);  border-color: rgba(99,102,241,.2); }
+.df-c-ico.loc svg { stroke: #818cf8; fill: none; }
+.df-c-text strong { display: block; font-size: 13px; font-weight: 600; color: var(--df-white); }
+.df-c-text span   { font-size: 13px; color: var(--df-muted); }
+
+/* ── Social ── */
+.df-social-list { display: flex; flex-direction: column; gap: 8px; }
+.df-social {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 14px; border-radius: 9px;
+  text-decoration: none; color: #bbb; font-size: 14px;
+  border: 1px solid var(--df-border);
+  background: rgba(255,255,255,.02);
+  transition: all .25s;
+}
+.df-social:hover {
+  color: var(--df-white);
+  border-color: rgba(255,255,255,.15);
+  background: rgba(255,255,255,.05);
+  transform: translateX(-4px);
+}
+[dir="ltr"] .df-social:hover { transform: translateX(4px); }
+.df-social svg { width: 17px; height: 17px; flex-shrink: 0; }
+.df-social.fb svg { fill: #1877f2; }
+.df-social.ig svg { fill: url(#df-ig-grad); }
+.df-social.li svg { fill: #0a66c2; }
+.df-social.yt svg { fill: #ff0000; }
+
+/* ── Bottom bar ── */
+.df-bottom {
+  padding: 22px 0;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 14px;
+  font-size: 13px; color: var(--df-muted);
+}
+.df-bottom a { color: var(--df-muted); text-decoration: none; transition: color .2s; }
+.df-bottom a:hover { color: var(--df-text); }
+.df-bottom-links { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.df-bottom-links span { color: var(--df-border); }
+.df-love { display: flex; align-items: center; gap: 5px; }
+.df-love svg { width: 13px; height: 13px; fill: var(--df-orange); animation: df-beat 2.2s ease infinite; }
+@keyframes df-beat {
+  0%,100% { transform: scale(1); }
+  25%      { transform: scale(1.22); }
+  50%      { transform: scale(1); }
+  75%      { transform: scale(1.15); }
+}
+
+/* ════════════════════════════════════════
+   SCROLL REVEAL
+════════════════════════════════════════ */
+.df-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .65s cubic-bezier(.22,1,.36,1), transform .65s cubic-bezier(.22,1,.36,1);
+}
+.df-reveal.df-visible { opacity: 1; transform: translateY(0); }
+
+/* ════════════════════════════════════════
+   RESPONSIVE — 1200px
+════════════════════════════════════════ */
+@media (max-width: 1200px) {
+  .df-avail-bar { padding: 0 32px; }
+  .df-av-seg    { padding: 0 18px; }
+  .df-footer    { padding: 56px 32px 0; }
+  .df-grid      { grid-template-columns: 1fr 1fr 1fr; gap: 32px; }
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE — 768px (tablet)
+════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* Availability bar → wraps into 2 rows */
+  .df-avail-bar {
+    height: auto;
+    padding: 14px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 0;
+  }
+  .df-avail-bar::before { display: none; }
+  .df-av-seg {
+    padding: 0;
+    border: none !important;
+    height: auto;
+  }
+  /* Live badge – full width row 1 */
+  .df-av-seg:nth-child(1) {
+    grid-column: 1 / -1;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--df-border) !important;
+    justify-content: center;
+  }
+  /* Spots left – col 1 row 2 */
+  .df-av-seg:nth-child(2) { justify-content: flex-start; }
+  /* Avatars – col 2 row 2 */
+  .df-av-seg:nth-child(3) { justify-content: flex-end; }
+  /* Booked – full width row 3 */
+  .df-av-seg.df-av-last {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding-top: 10px;
+    border-top: 1px solid var(--df-border) !important;
+    justify-content: center;
+  }
+  .df-av-num    { font-size: 18px; }
+  .df-av-sub    { font-size: 11px; }
+  .df-booked-num{ font-size: 17px; }
+  .df-av-row span { width: 26px; height: 26px; }
+
+  .df-footer { padding: 40px 20px 0; }
+  .df-grid   { grid-template-columns: 1fr 1fr; gap: 28px; padding-bottom: 40px; }
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE — 500px (mobile)
+════════════════════════════════════════ */
+@media (max-width: 500px) {
+ 
+  .df-logo-text     { font-size: 19px; }
+  .df-brand-desc    { font-size: 13px; max-width: 100%; margin-bottom: 18px; }
+
+  .df-col-title { font-size: 11px; margin-bottom: 14px; }
+  .df-links a   { font-size: 13px; padding: 8px 10px; }
+  .df-plan      { padding: 11px 13px; }
+  .df-plan-info strong { font-size: 13px; }
+  .df-c-ico     { width: 32px; height: 32px; }
+  .df-c-ico svg { width: 15px; height: 15px; }
+  .df-c-text strong, .df-c-text span { font-size: 12px; }
+  .df-social    { font-size: 13px; padding: 9px 11px; }
+
+  .df-bottom { flex-direction: column; align-items: center; text-align: center; }
+  .df-bottom-links { justify-content: center; }
+}
+</style>
+</head>
+<body style="background:#0a0a0a;">
+
+<!-- ══════════════════════════════════════════
+     كل شيء داخل .df-footer-scope لعزل الـ CSS
+══════════════════════════════════════════ -->
+<div class="df-footer-scope">
+
+  <!-- ─── LIVE AVAILABILITY BAR ─── -->
+  <div class="df-avail-bar">
+
+    <!-- Seg 1: Live badge -->
+    <div class="df-av-seg">
+      <div class="df-live-dot"></div>
+      <span class="df-live-label">Live Availability</span>
+    </div>
+
+    <!-- Seg 2: Spots -->
+    <div class="df-av-seg">
+      <span class="df-av-sub">Spots left this month:</span>
+      <span class="df-av-num" id="df-spots">08</span>
+    </div>
+
+    <!-- Seg 3: Avatars -->
+    <div class="df-av-seg">
+      <div class="df-av-row" id="df-avatars"></div>
+    </div>
+
+    <!-- Seg 4 (last): Booked -->
+    <div class="df-av-seg df-av-last">
+      <span class="df-av-sub">Projects booked this month</span>
+      <span class="df-booked-num" id="df-booked">24+</span>
+    </div>
+
+  </div>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="df-footer">
+
+    <!-- SVG defs for Instagram gradient -->
+    <svg width="0" height="0" style="position:absolute">
+      <defs>
+        <linearGradient id="df-ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%"   stop-color="#f09433"/>
+          <stop offset="25%"  stop-color="#e6683c"/>
+          <stop offset="50%"  stop-color="#dc2743"/>
+          <stop offset="75%"  stop-color="#cc2366"/>
+          <stop offset="100%" stop-color="#bc1888"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="df-grid">
+
+      <!-- ── 1. Brand ── -->
+      <div class="df-reveal" style="transition-delay:.05s">
+        <a href="#" class="df-brand-logo">
+          <div class="df-logo-icon" style="position:relative;overflow:hidden;background:transparent;" style="position:relative;overflow:hidden;">
+  <span style="position:absolute;background:#ff5e1a;border-radius:3px;width:18px;height:18px;top:6px;left:6px;"></span>
+  <span style="position:absolute;background:#ff5e1a;border-radius:3px;width:10px;height:10px;bottom:6px;right:6px;opacity:0.6;"></span>
+</div>
+          <span class="df-logo-text">Digital<span>Fler</span></span>
+        </a>
+        <p class="df-brand-desc">Helping businesses grow with modern websites &amp; intelligent automation.</p>
+        <div class="df-badges">
+          <div class="df-badge-row">
+            <div class="df-badge-ico">
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            100% Secure
+          </div>
+          <div class="df-badge-row">
+            <div class="df-badge-ico">
+              <svg viewBox="0 0 24 24" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            Fast Delivery
+          </div>
+          <div class="df-badge-row">
+            <div class="df-badge-ico">
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 15.92z"/></svg>
+            </div>
+            24/7 Support
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 2. Quick Links ── -->
+      <div class="df-reveal" style="transition-delay:.12s">
+        <p class="df-col-title">Quick Links</p>
+        <ul class="df-links">
+          <li><a href="#home">Home <svg viewBox="0 0 24 24" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></a></li>
+          <li><a href="#demand">Services <svg viewBox="0 0 24 24" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></a></li>
+          <li><a href="#projects">Projects <svg viewBox="0 0 24 24" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></a></li>
+          <li><a href="#">Blog <svg viewBox="0 0 24 24" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></a></li>
+          <li><a href="#contact">Contact <svg viewBox="0 0 24 24" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></a></li>
+        </ul>
+      </div>
+
+      <!-- ── 3. Plans ── -->
+      <div class="df-reveal" style="transition-delay:.19s">
+        <p class="df-col-title">Plans</p>
+        <div class="df-plans">
+          <a href="#" class="df-plan">
+            <div class="df-plan-info">
+              <strong>Plan</strong>
+              <span>View pricing &amp; packages</span>
+            </div>
+            <svg viewBox="0 0 24 24" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </a>
+          <a href="#" class="df-plan">
+            <div class="df-plan-info">
+              <strong>Onboarding</strong>
+              <span>Step-by-step guide</span>
+            </div>
+            <svg viewBox="0 0 24 24" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </a>
+          <a href="#" class="df-plan">
+            <div class="df-plan-info">
+              <strong>Enterprise</strong>
+              <span>Custom solutions</span>
+            </div>
+            <svg viewBox="0 0 24 24" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- ── 4. Contact ── -->
+      <div class="df-reveal" style="transition-delay:.26s">
+        <p class="df-col-title">Contact</p>
+        <div class="df-contact-list">
+          <div class="df-contact-item">
+            <div class="df-c-ico wa">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            </div>
+            <div class="df-c-text">
+              <strong>WhatsApp</strong>
+              <span>+212 776 192 673</span>
+            </div>
+          </div>
+          <div class="df-contact-item">
+            <div class="df-c-ico em">
+              <svg viewBox="0 0 24 24" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            </div>
+            <div class="df-c-text">
+              <strong>Email</strong>
+              <span>hello@digitalfler.com</span>
+            </div>
+          </div>
+          <div class="df-contact-item">
+            <div class="df-c-ico loc">
+              <svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="df-c-text">
+              <strong>Location</strong>
+              <span>Morocco 🇲🇦</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 5. Follow Us ── -->
+      <div class="df-reveal" style="transition-delay:.33s">
+        <p class="df-col-title">Follow Us</p>
+        <div class="df-social-list">
+          <a href="#" class="df-social fb">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </a>
+          <a href="#" class="df-social ig">
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path fill="#0a0a0a" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#0a0a0a" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            Instagram
+          </a>
+          <a href="#" class="df-social li">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="#" class="df-social yt">
+            <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="#0a0a0a" points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02"/></svg>
+            YouTube
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /df-grid -->
+
+    <!-- Bottom bar -->
+    <div class="df-bottom df-reveal" style="transition-delay:.4s">
+      <span>© 2026 DigitalFler. All rights reserved.</span>
+      <div class="df-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <span>•</span>
+        <a href="#">Terms of Service</a>
+        <span>•</span>
+        <a href="#">Cookie Policy</a>
+      </div>
+      <div class="df-love">
+        Made with
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        for your success
+      </div>
+    </div>
+
+  </footer>
+</div><!-- /df-footer-scope -->
+
+<script>
+(function() {
+  /* ── Avatars ── */
+  function buildAvatars(count) {
+    const row = document.getElementById('df-avatars');
+    if (!row) return;
+    row.innerHTML = '';
+    for (let i = 0; i < count; i++) {
+      const s = document.createElement('span');
+      s.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
+      </svg>`;
+      row.appendChild(s);
+    }
+  }
+
+  function animNum(id, val) {
+    const el = document.getElementById(id);
+    if (!el || el.textContent === String(val)) return;
+    el.classList.remove('df-flip');
+    void el.offsetWidth;
+    el.textContent = val;
+    el.classList.add('df-flip');
+  }
+
+  /* ── Fetch availability ── */
+  async function fetchAvail() {
+    try {
+      const res  = await fetch('https://yourwordpresssite.com/wp-json/otman/v1/spot', { cache: 'no-store' });
+      const data = await res.json();
+      const spots  = data.spots_left   ?? data.spots  ?? '08';
+      const booked = data.booked_count ?? data.booked ?? '24';
+      animNum('df-spots',  spots);
+      animNum('df-booked', booked + '+');
+      buildAvatars(Array.isArray(data.avatars) ? Math.max(data.avatars.length, 5) : 5);
+    } catch(_) {
+      animNum('df-spots',  '08');
+      animNum('df-booked', '24+');
+      buildAvatars(5);
+    }
+  }
+
+  fetchAvail();
+  setInterval(fetchAvail, 30000);
+
+  /* ── Scroll reveal ── */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('df-visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.df-reveal').forEach(el => io.observe(el));
+})();
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+</body>
+</html>
