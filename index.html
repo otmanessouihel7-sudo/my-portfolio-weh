@@ -1965,7 +1965,7 @@ document.getElementById('smartContactForm')?.addEventListener('submit', function
   /* ── Fetch availability ── */
   async function fetchAvail() {
     try {
-      const res  = await fetch('https://yourwordpresssite.com/wp-json/otman/v1/spot', { cache: 'no-store' });
+      const res = await fetch('http://porfolio-backend.local/wp-json/digitalfler/v1/availability', { cache: 'no-store' });
       const data = await res.json();
       const spots  = data.spots_left   ?? data.spots  ?? '08';
       const booked = data.booked_count ?? data.booked ?? '24';
