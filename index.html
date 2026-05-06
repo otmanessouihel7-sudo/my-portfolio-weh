@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="r.css">
-  <script src="i18n.js"></script>
-    
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="i18n.js"></script>
 
 
 
@@ -29,32 +29,34 @@
     </a>
 
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#demand">Demand</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#home" data-i18n="nav.home">Home</a></li>
+      <li><a href="#projects"data-i18n="nav.projects">Projects</a></li>
+      <li><a href="#services"data-i18n="nav.services">Services</a></li>
+      <li><a href="#contact"data-i18n="nav.contact">Contact</a></li>
     </ul>
 
     <div class="nav-right">
-      <a href="#demand" class="btn-primary">Get Started</a>
+      <a href="#" class="btn-primary">Get Started</a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
     </div>
+  
+    
   </nav>
 
   <!-- ══ MOBILE MENU ══ -->
   <div class="mobile-menu" id="mobileMenu">
     <ul>
       <li><a href="#" onclick="closeMenu()">Home</a></li>
-      <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
-      <li><a href="#demand" onclick="closeMenu()">Demand</a></li>
-      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      <li><a href="#" onclick="closeMenu()">Projects</a></li>
+      <li><a href="#" onclick="closeMenu()">Demand</a></li>
+      <li><a href="#" onclick="closeMenu()">Contact</a></li>
     </ul>
     <div class="mobile-cta">
-      <a href="#demand" class="btn-primary" onclick="closeMenu()">Get Started →</a>
+      <a href="#" class="btn-primary" onclick="closeMenu()">Get Started →</a>
     </div>
   </div>
 
@@ -105,7 +107,7 @@
     <div class="hero-content">
 
       <!-- Badge -->
-      <div class="badge">
+      <div class="badge" data-i18n="hero.badge">
         <span class="badge-dot"></span>
         Premium Web Solutions
       </div>
@@ -114,14 +116,14 @@
       <h1>Get more clients<br>with <em>high<br>converting</em><br>websites<br>&amp; stores</h1>
 
       <!-- Description -->
-      <p class="hero-desc">
+      <p class="hero-desc" data-i18n="hero.desc">
         We design modern, high-performance websites that turn visitors into customers. Clean design, fast loading, and premium user experience.
       </p>
 
       <!-- CTA Buttons -->
       <div class="hero-btns">
-        <a href="#projects" class="btn-primary">View Projects &nbsp;→</a>
-        <a href="#demand" class="btn-secondary">Get One &nbsp;→</a>
+        <a href="#projects" class="btn-primary" data-i18n="hero.btn1">View Projects &nbsp;→</a>
+        <a href="#demand" class="btn-secondary" data-i18n="hero.btn2">Get One &nbsp;→</a>
       </div>
 
       <!-- Social proof -->
@@ -501,7 +503,7 @@
     const frag = document.createDocumentFragment();
 
     slice.forEach((p) => {
-      const title = p.title?.rendered || 'Untitled Project';
+      const title = p.title?.rendered || (window.dfT ? window.dfT('card_untitled') : 'Untitled Project');
       const link  = p.acf?.link || '#';
       const img   = p._embedded?.['wp:featuredmedia']?.[0]?.source_url || '';
       const cats  = p._embedded?.['wp:term']?.[0]?.map(t => t.slug) || [];
@@ -520,10 +522,10 @@
         </div>
         <div class="hover-info" aria-hidden="true">
           <div class="info-text">
-            ${tag ? `<div class="card-meta"><span class="card-tag">${CAT_LABELS[tag] || tag}</span></div>` : ''}
+            ${tag ? `<div class="card-meta"><span class="card-tag" data-cat-slug="${tag}">${window.dfCatLabel ? window.dfCatLabel(tag) : (CAT_LABELS[tag] || tag)}</span></div>` : ''}
             <h3>${title}</h3>
-            <a href="${link}" target="_blank" rel="noopener noreferrer" class="live-link">
-              View Live
+            <a href="${link}" target="_blank" rel="noopener noreferrer" class="live-link">`
+   `  ${window.dfT ? window.dfT('card_view_live') : 'View Live'}
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M7 17 17 7M7 7h10v10"/>
               </svg>
@@ -1995,14 +1997,6 @@ document.getElementById('smartContactForm')?.addEventListener('submit', function
   document.querySelectorAll('.df-reveal').forEach(el => io.observe(el));
 })();
 </script>
-
-</body>
-</html>
-
-
-
-
-
 
 </body>
 </html>
